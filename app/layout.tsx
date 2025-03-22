@@ -1,8 +1,14 @@
+import '@/app/ui/global.css';
+import {ReactNode} from "react";
+
+
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+}: RootLayoutProps) {
   return (
     <html lang="en">
       <body>{children}</body>
